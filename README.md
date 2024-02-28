@@ -1,6 +1,6 @@
 # Working with Terraform Modules
 
-This repository is an example that demonstrates how to work with Terraform modules to manage cloud infrastructure. The project structure is organised to address different types of resources, such as compute, network and identity and access (IAM). The name of these modules is only an example and you can organise their name and what you want to include in them as long as it respects the following structure
+This repository is an example that demonstrates how to work with Terraform modules to manage cloud infrastructure. The project structure is organised to address different types of resources, such as compute, network and identity&access (IAM). The name of these modules is only an example and you can organise their name and what you want to include in them as long as it respects the following structure
 
 ## Project Structure
 ```
@@ -8,16 +8,19 @@ This repository is an example that demonstrates how to work with Terraform modul
 |-- variables.tf
 |-- outputs.tf
 |-- compute/
+|   |-- inputs.tf
 |   |-- main.tf
 |   |-- resources.tf
 |   |-- locals.tf
 |   |-- outputs.tf
 |-- network/
+|   |-- inputs.tf
 |   |-- main.tf
 |   |-- resources.tf
 |   |-- locals.tf
 |   |-- outputs.tf
 |-- iam/
+|   |-- inputs.tf
 |   |-- main.tf
 |   |-- resources.tf
 |   |-- locals.tf
