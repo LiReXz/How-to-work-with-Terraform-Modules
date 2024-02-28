@@ -13,18 +13,21 @@ This repository is an example that demonstrates how to work with Terraform modul
 |   |-- resources.tf
 |   |-- locals.tf
 |   |-- outputs.tf
+|   |-- other files...
 |-- network/
 |   |-- inputs.tf
 |   |-- main.tf
 |   |-- resources.tf
 |   |-- locals.tf
 |   |-- outputs.tf
+|   |-- other files...
 |-- iam/
 |   |-- inputs.tf
 |   |-- main.tf
 |   |-- resources.tf
 |   |-- locals.tf
 |   |-- outputs.tf
+|   |-- other files...
 ```
 ### Home folder:
 
