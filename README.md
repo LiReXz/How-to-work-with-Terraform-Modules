@@ -6,7 +6,6 @@ This repository is an example that demonstrates how to work with Terraform modul
 ```
 |-- main.tf
 |-- variables.tf
-|-- outputs.tf
 |-- compute/
 |   |-- inputs.tf
 |   |-- main.tf
