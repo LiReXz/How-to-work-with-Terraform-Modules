@@ -1,7 +1,7 @@
 #####  Create Lambda Function #####
 
 resource "aws_lambda_function" "lambda-function-example1" {
-    role = module.iam.iam-lambda-role-arn
+    role = var.iam-example1-role-arn
     function_name = ""
     handler = ""
     runtime = ""

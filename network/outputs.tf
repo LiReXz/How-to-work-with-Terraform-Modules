@@ -10,11 +10,11 @@ output "network-interface-example2-id" {
     value = aws_network_interface.network-interface-example2.id
 }
 
-output "aws-eip-example1-allocation-id" {
+output "eip-example1-allocation-id" {
     value = aws_eip.example1-eip.allocation_id
 }
 
-output "aws-eip-node2-allocation-id" {
+output "eip-node2-allocation-id" {
     value = aws_eip.example2-eip.allocation_id
 }
 

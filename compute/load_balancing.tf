@@ -5,7 +5,7 @@ resource "aws_lb" "example1-internal-loadbalancer" {
     internal = true
     load_balancer_type = ""
     subnets = [
-        module.network.subnet-eu-west-1a-id
+        var.example1-subnet-id
     ]
 
     enable_deletion_protection = true
@@ -21,7 +21,7 @@ resource "aws_lb" "example1-external-loadbalancer" {
     load_balancer_type = ""
 
     subnets = [
-        module.network.subnet-eu-west-1a-id
+        var.example1-subnet-id
     ]
 
     enable_deletion_protection = true
@@ -37,7 +37,7 @@ resource "aws_lb_target_group" "target-group-example1" {
     port = 00
     protocol = ""
     target_type = ""
-    vpc_id = module.network.graphenus-vpc-id
+    vpc_id = var.example1-vpc-id
 
     health_check {
         interval = 30
@@ -57,7 +57,7 @@ resource "aws_lb_target_group" "target-group-example2" {
     port = 88
     protocol = ""
     target_type = ""
-    vpc_id = module.network.graphenus-vpc-id
+    vpc_id = var.example1-vpc-id
 
     health_check {
         interval = 30
